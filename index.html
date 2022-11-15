@@ -12,7 +12,132 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <!-- Student code goes here -->
+      <section class="card" id="html-section">
+
+        <h2>HTML</h2>
+
+        <ul>
+          <li>The head element contains information about the webpage AKA Metadata.</li>
+          <ul>
+            <li>Metadata is data about our webpage that the browser uses to effectively serve our webpage to users</li>
+          </ul>
+          <li>The opening tag and closing tag are represented with angle brackets (< header > =open < / header > =close) </li>
+          <ul>
+            <li>In between these angle brackets will include the content and other nested elements</li>
+          </ul> 
+          <li>Example of some elements included in header:</li>
+          <ul>
+            <li> < ! DOCTYPE html > tells web browser what doc type to expect on the page</li>
+            <li> < html lang = " en " > tells browser language is en for English</li>
+            <li> < title > defines title for webpage</li>
+            <li> < style > defines CSS style associates with website</li>
+            <li> < base > defines the base URL for a webpage</li>
+            <li> < link > connects an external resource to the HTML doc.</li>
+            <li> < meta > defines metadata</li>
+            <li> < script > embeds client-side scripts in the HTML doc.</li>
+          </ul>
+          <br />
+          <li>The body element represents the visible content shown to the user AKA parent element</li>
+          <li>Nested elements within the body are called child elements</li>
+          <ul>
+            <li>child elements are mostly semantic where the name of the element describes its content and the role it plays on the web page.</li>
+          </ul>
+          <li>Examples of some semantic elements nested within the parent element:
+          <ul>
+            <li> < h1 > through < h6 > represents level of heading to appear on page</li>
+            <li> < p > paragraph</li>
+            <li> < ul > unordered list(blileted)</li>
+            <li> < li > listed items</li>
+            <li> < ol > ordered list(numbered)</li>
+            <li> < img > contains info about an image that will show on the web page-can contain various attributes: </li>
+          <ul>
+              <li> src = defines location of image to show on page</li>
+              <li> alt = provides description and functionality of the image (used for screen readers and other assistive technologies-can also improve engine rankings)</li>
+              <li> width = width of image</li>
+              <li> height = height of image</li>
+              <li> / > ends image information</li>
+            </ul>
+          </ul>
+          <ul>
+            <li> < br / > shows line break on page </li>
+            <li> < section > defines a section in a doc. that contains thematic content</li>
+            <li> < a > anchor creates links to the same webpage or other pages and can contain other attributes:
+          </ul>
+              <ul>
+                <ul>
+                <li> href = points to the URL for the link, Example: < a hrf = " insert hyperlink " > insert text for hyperlink < / a ></li>
+                </ul>
+              </ul>
+          <li>Examples of non-semantic elements: 
+          <ul>
+            <li> < div > to create a division in the page</li>
+            <li> < span > to create an inline division</li>
+          </ul>
+
+      </section>
+
+      <section class="card" id="css-section">
+
+        <h2>CSS</h2>
+
+        <ul>
+          <li>Enter your CSS notes here</li>
+        </ul>
+
+      </section>
+
+      <section class="card" id="git-section">
+
+        <h2>Git</h2>
+
+        <ul>
+          <li>pwd: print working directory-shows what directory you are currently working in</li>
+          <li>ls: gives list of files and folders in your working directory(table of contents)</li>
+          <li>cd: change directory i.e. cd documents/ will change your WD to the documents folder</li>
+          <li>cd .: moves your WD back a level</li>
+          <li>mkdir bootcamp: Makes a new directory(folder), named bootcamp, in your WD</li>
+          <li>touch: creates new file, touch first-day.txt: creates new text(.txt) file named first-day</li>
+          <li>ls -al ~/.ssh: searches for an SSH key pair</li>
+          <li>git config --global user.name "insert a git username": sets a username for every repo on computer</li>
+          <li>git config --global user.name: to check your set user name</li>
+          <li>git config --global user.email "insert your email": sets an email address for every repo on computer</li>
+          <li>git config --global user.email: to check your set email address</li>
+          <li>For username/email for a single repo on computer:</li>
+          <ul>
+            <li>type: ls for list of WD</li>
+            <li>type: cd insert single repository name: will move you into that repo</li>
+            <li>type: pwd to check to make sure you are in the correct repo</li>
+            <li>THEN type git config as mentioned above to change username/email for repo</li>
+          </ul>
+          <li>git clone paste URL from GitHub: will add repo you created in GitHub</li>
+          <li>git remote -v: will show origin of repo fetch and push</li>
+          <li>code .: to open your WD in VS Code</li>
+          <li>git status: checks what branch you are currently on</li>
+          <li>git branch: will show you your branches</li>
+          <li>git checkout -b insert what you will call your new branch: creates new branch and will move you into that working branch(no spaces-use dash or underscore, no caps)</li>
+          <li>git branch: if typed again, it will show you all of your branches (title that is green is what branch you are currently on)</li>
+          <li>git checkout insert branch name: will move you into that branch(when you type git branch your new branch will now be green)</li>
+          <li>git branch --help: opens web browser page with info to help with branches</li>
+          <li>CL: will show any untracked folders/files that have not been added or synced to your new branch(will be red)</li>
+          <li>git add -A: will sync ALL untracked(red) files to your branch</li>
+          <li>git add insert specific file name: will only add that one specific untracked file</li>
+          <li>git commit -m"insert message i.e. add starter code": commits the files you had staged</li>
+          <li>git pull: to receive a branch's mods into the local environment</li>
+          <li>git push: you can create a new remote brnach or add new changes to an existing one</li>
+        </ul>
+
+      </section>
+
+      <section class="card" id="javascript-section">
+
+        <h2>Javascipt</h2>
+
+        <ul>
+          <li>Enter your Javascipt notes here</li>
+        </ul>
+
+      </section>
+
     </main>
 
     <footer>
