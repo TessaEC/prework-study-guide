@@ -4,27 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
     <header id="top">
-      <h1>Prework Study Guide</h1>
+      <h1><b>Prework Study Guide</b></h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
       <section class="card" id="html-section">
-
-        <h2>HTML</h2>
-
+      <br />
+        <h2><b>HTML</b></h2>
+      <br />
         <ul>
-          <li>The head element contains information about the webpage AKA Metadata.</li>
+          <li>The <mark><b>head</b></mark> element contains information about the webpage AKA Metadata.</li>
           <ul>
-            <li>Metadata is data about our webpage that the browser uses to effectively serve our webpage to users</li>
+            <li><b>Metadata</b>> is data about our webpage that the browser uses to effectively serve our webpage to users</li>
           </ul>
           <li>The opening tag and closing tag are represented with angle brackets (< header > =open < / header > =close) </li>
           <ul>
             <li>In between these angle brackets will include the content and other nested elements</li>
-          </ul> 
+        </ul>
           <li>Example of some elements included in header:</li>
           <ul>
             <li> < ! DOCTYPE html > tells web browser what doc type to expect on the page</li>
@@ -37,22 +38,24 @@
             <li> < script > embeds client-side scripts in the HTML doc.</li>
           </ul>
           <br />
-          <li>The body element represents the visible content shown to the user AKA parent element</li>
-          <li>Nested elements within the body are called child elements</li>
+          <li>The <b><mark>body</mark></b> element represents the visible content shown to the user AKA <i>parent</i> element</li>
+          <li>Nested elements within the body are called <i>child</i> elements</li>
           <ul>
-            <li>child elements are mostly semantic where the name of the element describes its content and the role it plays on the web page.</li>
+            <li>child elements are mostly <b>semantic</b> where the name of the element describes its content and the role it plays on the web page.</li>
           </ul>
           <li>Examples of some semantic elements nested within the parent element:
           <ul>
             <li> < h1 > through < h6 > represents level of heading to appear on page</li>
             <li> < p > paragraph</li>
-            <li> < ul > unordered list(blileted)</li>
+            <li> < ul > unordered list(bullet points) - if you use < ul > within list you can indent a list item</li>
             <li> < li > listed items</li>
             <li> < ol > ordered list(numbered)</li>
+            <li> < b > bolds everything in between open and close</li>
             <li> < img > contains info about an image that will show on the web page-can contain various attributes: </li>
           <ul>
               <li> src = defines location of image to show on page</li>
-              <li> alt = provides description and functionality of the image (used for screen readers and other assistive technologies-can also improve engine rankings)</li>
+              <li> alt = provides description and functionality of the image (used for screen readers and other assistive technologies <br>
+                -can also improve engine rankings)</li>
               <li> width = width of image</li>
               <li> height = height of image</li>
               <li> / > ends image information</li>
@@ -60,6 +63,7 @@
           </ul>
           <ul>
             <li> < br / > shows line break on page </li>
+            <li> < br > breaks at inserted point of line - can wrap text to next line.</li>
             <li> < section > defines a section in a doc. that contains thematic content</li>
             <li> < a > anchor creates links to the same webpage or other pages and can contain other attributes:
           </ul>
@@ -68,80 +72,177 @@
                 <li> href = points to the URL for the link, Example: < a hrf = " insert hyperlink " > insert text for hyperlink < / a ></li>
                 </ul>
               </ul>
-          <li>Examples of non-semantic elements: 
+          <li>Examples of <b>non-semantic</b> elements: 
           <ul>
             <li> < div > to create a division in the page</li>
             <li> < span > to create an inline division</li>
           </ul>
-
+        </ul>
+    <br />
       </section>
 
       <section class="card" id="css-section">
-
-        <h2>CSS</h2>
-
+    <br />
+        <h2><b>CSS</b></h2>
+    <br />
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li><b><mark>Inline</mark> CSS</b> - applies to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only</li>
+            <ul>
+              <li>quick and permanent changes</li>
+              <li>less flexible than internal/external style sheets due to each line style must be edited individually.</li>
+            </ul>
+          <li><b><mark>Internal CSS</mark></b> - contains CSS rules for the webpage in the head section of the html file</li>
+            <ul>
+              <li>Rules only apply to that page</li>
+              <li>Can configure CSS class and IDs-used to identify elements-to style multiple elements in the page code.</li>
+            </ul>
+          <li><b><mark>External</mark> CSS</b> - Link from separate CSS file is placed in HTML head - Allows developers to keep all of their CSS rules in separate files</li>
+            <ul>
+              <li>easier</li>
+              <li>most common</li>
+            </ul>
+          <li><b>Separation of concerns</b>-term in web dev. refers to separating code into diff. files based on use, the idea that ea. sections <br>
+            of code should have it's own responsibility.</li>
+          <li><b>Selector</b> defines the element or attributes to which the rules, or declaration will apply.</li>
+          <li><b>Property</b>dictates which aspect of the selector will be changed visually.</li>
+            <ul>
+              <li>Width declaration - makes element __ % of the available width (ex. width : 80% ;)</li>
+              <li>Margin declaration - assigns __px to the top and bottom of element (ex. margin : 40px auto ;)</li>
+                <ul>
+                  <li>Auto value = to the left and right</li>
+                </ul>
+              <li>Border property - to border with width of __px + color of border (Ex. border : 5px solid gray ;)</li>
+              <li>Box Shadow - adds shadow effects around an elements frame. (Ex. box - shadow : 5px 10px blue ;)</li>
+            </ul>
+          <li><b>Value</b>is what the chosen CSS property will be changed to.</li>
+            <ul>
+              <li>You can select colors by name OR by its hexadecimal code AKA hex #</li>
+            </ul>
+          <li><b>Declaration</b> contains 2 components = CSS property we want to apply and the value of the property.</li> 
+          <li><b>Margin</b> property indicates how much space we want around the outside of an element.</li>
+          <li><b>Padding</b> property indicates how much space we want around the content inside an element.</li>
+          <li><b>CSS box rule</b> - think of every HTML element as a box. Ea box consists of margins outside the element, and the element's <br>
+            borders, padding and content.</li>
+          <li><b>Do Not Repeat Yourself (DRY) code</b> - a coding principal that reduces the number of lines of code that need to be written or maintained.</li>
+          <li><b>Class attributes</b> allow us to share a CSS rule to any element we choose by assigning the rule to an attribute with a selector, then the att. can be <br>
+            assigned to the element in html, enabling choice of which elements will get the CSS rule.</li>
+          <li><b>Selectors:</b></li>
+            <ul>
+              <li>Asterisk symbol is a special wild card symbol - declares that ALL of the elements on the page will have the same style properties</li>
+              <li>Comma allows us to combine 2 or more selectors into a single CSS rule which allows the declarations to affect all selectors stated.</li>
+              <li>. card, the period designates this as a class selector. HTML elements assigned to card will get the property assignments from CSS</li>
+                <ul>
+                  <li>Example: applied declarations to CSS file-linked in html to each < section > as < section <b>class = " card " id = " git - section "</b> >
+                </ul>
+            </ul>
+          <li><b>To link an External CSS file to HTML:</b></li>
+            <ul>
+              <li>we store metadata in the < head ></li>
+              <li>insert link to CSS file after < head > before < title > (Ex. < link rel = "stylesheet" href = " ./ assets / style . css" >)</li>
+                <ul>
+                  <li>link - creates connection</li>
+                  <li>rel - specifies relationship b/w the current doc. and the linked doc. resource</li>
+                  <li>href - specifies the location (URL) of the external resource-using a relative path which means the location is derived from the current location <br>
+                    (index . html). To locate the style sheet from current location = assets / style . css(our file name).
+                </ul>
+              </ul>
         </ul>
+      <br />  
 
       </section>
 
       <section class="card" id="git-section">
-
-        <h2>Git</h2>
-
+      <br />
+        <h2><b>Git</b></h2>
+      <br />
         <ul>
-          <li>pwd: print working directory-shows what directory you are currently working in</li>
-          <li>ls: gives list of files and folders in your working directory(table of contents)</li>
-          <li>cd: change directory i.e. cd documents/ will change your WD to the documents folder</li>
-          <li>cd .: moves your WD back a level</li>
-          <li>mkdir bootcamp: Makes a new directory(folder), named bootcamp, in your WD</li>
-          <li>touch: creates new file, touch first-day.txt: creates new text(.txt) file named first-day</li>
-          <li>ls -al ~/.ssh: searches for an SSH key pair</li>
-          <li>git config --global user.name "insert a git username": sets a username for every repo on computer</li>
-          <li>git config --global user.name: to check your set user name</li>
-          <li>git config --global user.email "insert your email": sets an email address for every repo on computer</li>
-          <li>git config --global user.email: to check your set email address</li>
-          <li>For username/email for a single repo on computer:</li>
+          <li><b><mark>Git codes:</mark></b></li>
           <ul>
-            <li>type: ls for list of WD</li>
-            <li>type: cd insert single repository name: will move you into that repo</li>
-            <li>type: pwd to check to make sure you are in the correct repo</li>
-            <li>THEN type git config as mentioned above to change username/email for repo</li>
+            <li>pwd: print working directory-shows what directory you are currently working in</li>
+            <li>ls: gives list of files and folders in your working directory(table of contents)</li>
+            <li>cd: change directory i.e. cd documents/ will change your WD to the documents folder</li>
+            <li>cd .: moves your WD back a level</li>
+            <li>mkdir bootcamp: Makes a new directory(folder), named bootcamp, in your WD</li>
+            <li>touch: creates new file, touch first-day.txt: creates new text(.txt) file named first-day</li>
+            <li>ls -al ~/.ssh: searches for an SSH key pair</li>
+            <li>git config --global user.name "insert a git username": sets a username for every repo on computer</li>
+            <li>git config --global user.name: to check your set user name</li>
+            <li>git config --global user.email "insert your email": sets an email address for every repo on computer</li>
+            <li>git config --global user.email: to check your set email address</li>
+            <li>git clone paste URL from GitHub: will add repo you created in GitHub</li>
+            <li>git remote -v: will show origin of repo fetch and push</li>
+            <li>code .: to open your WD in VS Code</li>
+            <li>git status: checks what branch you are currently on</li>
+            <li>git branch: will show you your branches</li>
+            <li>git checkout -b insert what you will call your new branch: creates new branch and will move you into that working branch <br>
+              (no spaces-use dash or underscore, no caps)</li>
+            <li>git branch: if typed again, it will show you all of your branches (title that is green is what branch you are currently on)</li>
+            <li>git checkout insert branch name: will move you into that branch(when you type git branch your new branch will now be green)</li>
+            <li>git branch --help: opens web browser page with info to help with branches</li>
+            <li>CL: will show any untracked folders/files that have not been added or synced to your new branch(will be red)</li>
+            <li>git add -A: will sync ALL untracked(red) files to your branch</li>
+            <li>git add insert specific file name: will only add that one specific untracked file</li>
+            <li>git commit -m"insert message i.e. add starter code": commits the files you had staged</li>
+            <li>git pull: to receive a branch's mods into the local environment</li>
+            <li>git push: you can create a new remote branch or add new changes to an existing one</li>
           </ul>
-          <li>git clone paste URL from GitHub: will add repo you created in GitHub</li>
-          <li>git remote -v: will show origin of repo fetch and push</li>
-          <li>code .: to open your WD in VS Code</li>
-          <li>git status: checks what branch you are currently on</li>
-          <li>git branch: will show you your branches</li>
-          <li>git checkout -b insert what you will call your new branch: creates new branch and will move you into that working branch(no spaces-use dash or underscore, no caps)</li>
-          <li>git branch: if typed again, it will show you all of your branches (title that is green is what branch you are currently on)</li>
-          <li>git checkout insert branch name: will move you into that branch(when you type git branch your new branch will now be green)</li>
-          <li>git branch --help: opens web browser page with info to help with branches</li>
-          <li>CL: will show any untracked folders/files that have not been added or synced to your new branch(will be red)</li>
-          <li>git add -A: will sync ALL untracked(red) files to your branch</li>
-          <li>git add insert specific file name: will only add that one specific untracked file</li>
-          <li>git commit -m"insert message i.e. add starter code": commits the files you had staged</li>
-          <li>git pull: to receive a branch's mods into the local environment</li>
-          <li>git push: you can create a new remote brnach or add new changes to an existing one</li>
+          <li>Process to add new <b>feature</b> branch:</li>
+          <ul>
+            <li>cd = change directory</li>
+            <li>cd bootcamp (main file)</li>
+            <li>cd prework - study - guide(file within bootcamp folder you want to branch off of)</li>
+            <li> git checkout main = branching off of main branch</li>
+            <li>git branch = checks what branch you are on - branch you want should be green</li>
+            <li>git branch -c feature/insert name you want new branch to be = will create your new feature branch</li>
+            <li>git checkout feature/new branch name = switches you to that branch</li>
+            <li>git branch = verifies what branch you are on - will be green</li>
+          </ul>
+          <li>To <b>delete</b> a branch:</li>
+            <ul>
+              <li>Move off of branch you are wanting to delete</li>
+              <li>git branch - - delete feature/name of branch</li>
+              <li>This will delete branch and any updates you have  done since last merge to branch</li>
+            </ul>
+          <li>Git <b>flow</b>:</li>
+          <ul>
+            <li>Make sure you are on your feature branch</li>
+            <li>git add -A = stages all changed files to our feature branch</li>
+            <li>git commit - m " add message/note of what was changed "</li>
+            <li>git pull origin main = syncs our local branch with the remote branch in GitHub - always pull the base branch into your feature branch <br />
+            before pushing up any code</li>
+            <li>git push origin feature/name of branch = pushes our changes</li>
+            <li>refresh GitHub, your feature branch should show under main </li>
+            <li>Click pull requests tab at top</li>
+            <li>Click New Pull Request</li>
+            <li>Make sure the base is set to main and compare is set to your new branch</li>
+            <li>Click Create Pull Request</li>
+            <li>On the pull request form, give PR a title and short description of the changes</li>
+            <li>Click Create Pull Request</li>
+            <li>If working with a team on project you will tag others in your request and wait for approval before merging</li>
+            <li>If working on project alone, click Merge Pull Request and then delete branch</li>
+            <li>Close your issues list if it is completed after merge</li>
+          </ul>
         </ul>
+       <br /> 
 
       </section>
 
       <section class="card" id="javascript-section">
-
-        <h2>Javascipt</h2>
-
+      <br />
+        <h2><b>Javascipt</b></h2>
+      <br />
         <ul>
           <li>Enter your Javascipt notes here</li>
         </ul>
+      <br />
 
       </section>
 
     </main>
 
     <footer>
-      <p>I can code!</p>
+      <br />
+      <p><b>I can code!</b></p>
     </footer>
   </body>
 </html>
