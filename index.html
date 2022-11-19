@@ -11,11 +11,12 @@
     <header id="top">
       <h1><b>Prework Study Guide</b></h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
       <br />
-        <h2><b>HTML</b></h2>
+        <h2><b><u>HTML</b></u></h2>
       <br />
         <ul>
           <li>The <mark><b>head</b></mark> element contains information about the webpage AKA Metadata.</li>
@@ -38,8 +39,8 @@
             <li> < script > embeds client-side scripts in the HTML doc.</li>
           </ul>
           <br />
-          <li>The <b><mark>body</mark></b> element represents the visible content shown to the user AKA <i>parent</i> element</li>
-          <li>Nested elements within the body are called <i>child</i> elements</li>
+          <li>The <b><mark>body</mark></b> element represents the visible content shown to the user AKA <u>parent</u> element</li>
+          <li>Nested elements within the body are called <u>child</u> elements</li>
           <ul>
             <li>child elements are mostly <b>semantic</b> where the name of the element describes its content and the role it plays on the web page.</li>
           </ul>
@@ -49,8 +50,9 @@
             <li> < p > paragraph</li>
             <li> < ul > unordered list(bullet points) - if you use < ul > within list you can indent a list item</li>
             <li> < li > listed items</li>
-            <li> < ol > ordered list(numbered)</li>
-            <li> < b > bolds everything in between open and close</li>
+            <li> < ol > ordered list(numbered/new indented line)</li>
+            <li> < b > bolds the word or words in between open and close</li>
+            <li> < u > underlines the word or words in between open and close</li>
             <li> < img > contains info about an image that will show on the web page-can contain various attributes: </li>
           <ul>
               <li> src = defines location of image to show on page</li>
@@ -83,7 +85,7 @@
 
       <section class="card" id="css-section">
     <br />
-        <h2><b>CSS</b></h2>
+        <h2><b><u>CSS</b></u></h2>
     <br />
         <ul>
           <li><b><mark>Inline</mark> CSS</b> - applies to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only</li>
@@ -101,7 +103,7 @@
               <li>easier</li>
               <li>most common</li>
             </ul>
-          <li><b>Separation of concerns</b>-term in web dev. refers to separating code into diff. files based on use, the idea that ea. sections <br>
+          <li><b>Separation of concerns</b> - term in web dev. refers to separating code into diff. files based on use, the idea that ea. sections <br>
             of code should have it's own responsibility.</li>
           <li><b>Selector</b> defines the element or attributes to which the rules, or declaration will apply.</li>
           <li><b>Property</b>dictates which aspect of the selector will be changed visually.</li>
@@ -114,7 +116,7 @@
               <li>Border property - to border with width of __px + color of border (Ex. border : 5px solid gray ;)</li>
               <li>Box Shadow - adds shadow effects around an elements frame. (Ex. box - shadow : 5px 10px blue ;)</li>
             </ul>
-          <li><b>Value</b>is what the chosen CSS property will be changed to.</li>
+          <li><b>Value</b> is what the chosen CSS property will be changed to.</li>
             <ul>
               <li>You can select colors by name OR by its hexadecimal code AKA hex #</li>
             </ul>
@@ -132,10 +134,11 @@
               <li>Comma allows us to combine 2 or more selectors into a single CSS rule which allows the declarations to affect all selectors stated.</li>
               <li>. card, the period designates this as a class selector. HTML elements assigned to card will get the property assignments from CSS</li>
                 <ul>
-                  <li>Example: applied declarations to CSS file-linked in html to each < section > as < section <b>class = " card " id = " git - section "</b> >
+                  <li>Example: applied declarations to CSS file-linked in html to each<br />
+                    < section > as < section < class = " card " id = " git - section " ></li>
                 </ul>
             </ul>
-          <li><b>To link an External CSS file to HTML:</b></li>
+          <li><b><u>To link an External CSS file to HTML: </b></u></li>
             <ul>
               <li>we store metadata in the < head ></li>
               <li>insert link to CSS file after < head > before < title > (Ex. < link rel = "stylesheet" href = " ./ assets / style . css" >)</li>
@@ -153,7 +156,7 @@
 
       <section class="card" id="git-section">
       <br />
-        <h2><b>Git</b></h2>
+        <h2><b><u>Git</b></u></h2>
       <br />
         <ul>
           <li><b><mark>Git codes:</mark></b></li>
@@ -229,11 +232,77 @@
 
       <section class="card" id="javascript-section">
       <br />
-        <h2><b>Javascipt</b></h2>
+        <h2><b><u>Javascipt</b></u></h2>
       <br />
         <ul>
-          <li>Enter your Javascipt notes here</li>
+          <li><b>Variable</b> - a named container that allows us to store data in our code. declare var, then give var a name.</li>
+          <li><b>Assignment Operator</b> - to assign the specific data that we want to store in our variable. Declare as =</li>
+          <ul>
+            <li><i>console . log</i> is a method to output a message to the web console by adding an argument <br />
+              Ex. console . log ( topics ) ; will output the value of topics to the web console because we've added it as an argument inside the (). </li>
+            </ul>
+          <li><b>Chrome DevTools</b> - a set of web dev. tools built directly into the Google Chrome browser. Use to verify working codes with JS.</li>
+          <li><b>Control Flow</b> - the order a computer executes code in script. JS runs from1st script at top to bottom.<br/>
+          <u>Concept:</u> highway with on/off ramps-a car will exit the highway if a condition is met - Achieved by using <i>if</i> statements.<br />
+          Ex. IF driver is hungry or IF car needs gas - if ( isHungry = = true ) { // Make a sandwich</li>
+          <li><b>Conditional Statement</b> - a set of rules performed if a certain condition is met. If-then statement, IF a <br />
+          condition is met, THEN an action is performed.</li>
+          <ul>
+            <li><i>falsy</i> in JS = zero, negative zero, On, " ", null, undefined, Nan (Not A Number), or boolean data type that is false.</li>
+            <li><i>truthy</i> in JS = all other data types and boolean that is true.</li>
+          </ul>
+          <li><b>Array</b> - a single variable that is used to hold a group of data-data that is related in some way.<br />
+          -used when you want to perform a task on multiple pieces of data at once.</li>
+          <ul>
+            <li>To work with individual data items inside an array we need the location of data. Zero, 1, 2, 3 = <i>index</i> AKA location # - numbered as listed in array.<br />
+            Ex. To access only one - variable name [ index # in array ] AKA shapes [ 0 ] - zero is your first listed object</li>
+            </ul>
+          <li><b><mark><i>for</i> Loop</b></mark> - uses the predictable pattern of indices to perform a task on all the items in an array by allowing <br />
+          a single code block to be executed over & over-Can use console . log ( shapes [ 0 ] ) ; - too tedious <u>INSTEAD:</u></li>
+          <ul>
+            <li>You'll need the shape's index & the array's length:<br />
+              3 Statements:
+              <ul>
+                <ol>1. Starting point for the loop = start at beginning = x variable = value of 0(zero) = x=0</ol>
+                <ol>2. Condition: word length and shapes array = x < <i>less than</i> shapes . length ;</ol>
+                <ol>3. What allows the array to reiterate over & over? Adding one each time = x + + (means x + 1)</ol>
+                <ol>=<br />
+                    for ( var x = 0 ; x < shapes . length ; x + +) {<br />
+                  // code block<br /> 
+                }</ol>
+              </ul>
+            </ul>
+          <li><b>Comment Out Code</b> - makes code inactive without deleting it, incase you need it later. Declare as /* block of code */</li>
+          <li><b><mark>Function</b></mark> - a set of instructions that tells the computer how to perform a certain task.</li>
+          <ul>
+            <li>To create a function:</li>
+            <ul>
+              <ol> - Define the function:</ol>
+              <ul>
+                <li><i>code block</i>AKA<i>function body</i> - contains the instructions on what the function will do.</li>
+                <ol>function makeTea ( ) {<br />
+                    console . log ( " Heating up the water ! " ) ;<br />
+                    console . log ( " Putting the tea bag into the heated water ! " ) ;<br />
+                    console . log ( " Pouring the tea bag into a cup ! " ) ;<br />
+                    }<br /></ol>
+                  <ol>*** A function's name is followed by parentheses ( ) and a semicolon ; ends a statement</ol>
+                  </ul>
+              <ol> - Call the function - insert in script where you want it to execute, remember <i>Control Flow</i></ol>
+              <ol> makeTea ( )
+            </ul>
+          </ul>
+
+        <br />
+
+          <li><b><u>To link an External JavaScript file to HTML:</b></u></li>
+          <ul>
+            <li>JS is linked within the < body > element.</li>
+            <li>Under the footer element & above the closing tag for < / body ></li>
+            <li>Type: < script src = " ./assets/script.js " > < / script ></li>
+
+          </ul>
         </ul>
+
       <br />
 
       </section>
@@ -244,5 +313,6 @@
       <br />
       <p><b>I can code!</b></p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
